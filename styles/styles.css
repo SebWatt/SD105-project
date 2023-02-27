@@ -5,6 +5,7 @@
 }
 
 header {
+  background-color: black;
   display: flex;
   justify-content: space-between;
 }
@@ -17,7 +18,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   background-color: black;
   transition: 0.25s;
 }
@@ -25,6 +26,8 @@ header {
 .side-menu ul {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  list-style: none;
   align-items: center;
 }
 
@@ -42,7 +45,7 @@ header {
   color: aqua;
 }
 
-.hamburger-open {
+#hamburger-open {
   cursor: pointer;
   background-color: black;
   font-size: 1.5rem;
@@ -51,11 +54,35 @@ header {
   border: none;
 }
 
-.side-menu .hamburger-close {
+.side-menu #hamburger-close {
   cursor: pointer;
   background-color: black;
   font-size: 1.5rem;
   padding: 1rem;
   color: white;
   border: none;
+}
+
+@media screen and (min-width: 762px) {
+  #hamburger-open,
+  #hamburger-close {
+    display: none;
+  }
+
+  .side-menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 1rem;
+    width: 100%;
+    transition: 0s;
+    z-index: 0;
+  }
+
+  .side-menu ul {
+    flex-direction: row;
+  }
+
+  .side-menu li a {
+    font-size: 1.6rem;
+  }
 }
