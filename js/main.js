@@ -1,4 +1,5 @@
 const sideMenu = document.getElementsByClassName("side-menu")[0];
+const sideMenuIcon = document.querySelector(".side-menu i");
 function openHamburgerMenuBtn() {
   sideMenu.style.width = "40%";
   sideMenu.style.zIndex = 1;
