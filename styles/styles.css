@@ -8,6 +8,10 @@ header {
   background-color: black;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .side-menu {
@@ -32,6 +36,7 @@ header {
 }
 
 .side-menu li {
+  display: none;
   padding: 1rem 0rem;
 }
 
@@ -63,6 +68,106 @@ header {
   border: none;
 }
 
+main {
+  margin-top: 4rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about h2 {
+  text-decoration: underline;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.about .introduction-contain {
+  padding: 5% 5%;
+  box-shadow: 1px 0px 2px black inherit;
+  background-color: #505a5b;
+  color: white;
+}
+
+.about .introduction-contain h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0 1.3rem;
+  margin-bottom: 5%;
+  border: 2px solid #dcedff;
+  border-left: 0;
+  border-top: 0;
+  border-radius: 0px 0px 32px 0px;
+}
+
+.about .introduction-contain p {
+  margin-bottom: 5%;
+  font-size: 20px;
+  padding: 0.5rem 1.3rem;
+  border: 2px solid #dcedff;
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 32px 0px 0px 0px;
+}
+
+.skills-container {
+  margin-top: 2rem;
+}
+
+.skill-column {
+  margin: 2rem 5%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px #505a5b solid;
+  border-radius: 2.5%;
+  box-shadow: 0px 0px 4px black;
+}
+
+.skill-column i {
+  background-color: #94b0da;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  padding: 1rem;
+}
+
+.skill-column h2 {
+  transform: translateY(-25%);
+  font-size: 24px;
+}
+
+.skill-column p {
+  font-size: 18px;
+}
+
+.skill-description {
+  margin-top: 0.6rem;
+}
+
+.skill-description h3 {
+  font-size: 20px;
+  margin-top: 0.6rem;
+}
+
+.skill-description ul {
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.skill-description ul li {
+  margin-top: 0.3rem;
+  font-size: 18px;
+}
+
 @media screen and (min-width: 762px) {
   #hamburger-open,
   #hamburger-close {
@@ -80,6 +185,11 @@ header {
 
   .side-menu ul {
     flex-direction: row;
+  }
+
+  .side-menu li {
+    display: block;
+    padding: 1rem 0rem;
   }
 
   .side-menu li a {
