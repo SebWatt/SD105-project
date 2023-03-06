@@ -184,7 +184,7 @@ main {
 
 .project-box {
   text-align: left;
-  max-width: 600px;
+  max-width: 500px;
   margin-top: 1rem;
   background-color: white;
   color: black;
@@ -207,8 +207,7 @@ main {
   display: inline-block;
   font-size: 24px;
   padding: 2%;
-  background-color: #343f3e;
-  opacity: 75%;
+  background-color: #343f3e99;
   transform: translateY(-110%);
 }
 
