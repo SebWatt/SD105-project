@@ -1,0 +1,19 @@
+{
+  "name": "sd105-project",
+  "version": "1.0.0",
+  "description": "Portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebWatt/SD105-project.git"
+  },
+  "author": "Sebastien Watt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebWatt/SD105-project/issues"
+  },
+  "homepage": "https://github.com/SebWatt/SD105-project#readme"
+}
