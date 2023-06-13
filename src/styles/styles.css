@@ -6,12 +6,22 @@
 
 header {
   background-color: black;
+  color: white;
   display: flex;
   justify-content: space-between;
   z-index: 1;
   position: fixed;
+
   top: 0;
   width: 100%;
+}
+
+header h1 {
+  border: 3px solid white;
+  padding: 0.3rem;
+  margin: 0 5%;
+  display: flex;
+  align-self: center;
 }
 
 header nav li {
@@ -33,6 +43,10 @@ header nav li {
 button {
   color: white;
   background-color: black;
+}
+
+header.active h1 {
+  margin: 0 5%;
 }
 
 header.active nav {
@@ -103,11 +117,16 @@ main {
 
 .skills-container {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill-column {
   margin: 2rem 5%;
   padding: 0.5rem;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,6 +190,13 @@ main {
   font-size: 18px;
 }
 
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .project-box {
   text-align: left;
   max-width: 500px;
@@ -228,30 +254,70 @@ main {
 }
 
 @media screen and (min-width: 762px) {
-  #hamburger-open,
-  #hamburger-close {
+  .nav-icon {
     display: none;
   }
 
-  .side-menu {
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 1rem;
-    width: 100%;
-    transition: 0s;
-    z-index: 0;
+  header,
+  header.active {
+    flex-direction: row-reverse;
   }
 
-  .side-menu ul {
-    flex-direction: row;
+  header nav,
+  header.active nav {
+    display: flex;
   }
 
-  .side-menu li {
+  header nav li,
+  header.active nav li {
     display: block;
-    padding: 1rem 0rem;
   }
 
-  .side-menu li a {
+  header nav li a,
+  header.active nav li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  header nav,
+  header.active nav {
+    margin-top: 0;
+  }
+
+  header nav li,
+  header.active nav li {
+    display: block;
+    color: white;
+    padding: 1rem;
+  }
+
+  header nav li a,
+  header.active nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  header nav li a:hover,
+  header.active nav li a:hover {
+    text-decoration: underline;
+  }
+
+  .about .introduction-contain {
+    background-color: #505a5b;
+    width: 100%;
+  }
+
+  .about .introduction-contain .intro {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .about .introduction-contain p {
+    max-width: 600px;
     font-size: 1.6rem;
   }
 }
