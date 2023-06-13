@@ -6,41 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sebastien Watt - Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/b998453c7b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/main.js"></script>
   </head>
   <body>
     <header>
       <!-- will change this to make better in future -->
-      <nav class="side-menu">
-        <button id="hamburger-close">
-          <i class="fa fa-close"></i>
-        </button>
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <button id="hamburger-open">
+      <button class="nav-icon">
         <i class="fa fa-bars"></i>
       </button>
+      <nav>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </nav>
       <h1>SW</h1>
     </header>
     <main>
       <section class="about">
         <h2>Frontend Developer</h2>
         <div class="introduction-contain">
-          <h3>Hi, I'm Sebastien Watt. It's a pleasure to meet you.</h3>
-          <p>
-            I have loved everything about technology since I was three years
-            old. Currently, I'm a grade 11 student studying software development
-            and communication at MITT. I'm an enthusiastic learner, a hard
-            worker and a problem solver. I'm exicited to continue to learn and
-            help make the website that you need.
-          </p>
+          <div class="intro">
+            <h3>Hi, I'm Sebastien Watt. It's a pleasure to meet you.</h3>
+            <p>
+              I have loved everything about technology since I was three years
+              old. Currently, I'm a grade 11 student studying software
+              development and communication at MITT. I'm an enthusiastic
+              learner, a hard worker and a problem solver. I'm exicited to
+              continue to learn and help make the website that you need.
+            </p>
+          </div>
         </div>
       </section>
       <section class="skills-container">
@@ -62,6 +60,7 @@
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
+                  <li>React</li>
                 </ul>
               </div>
               <div class="tools">
@@ -169,7 +168,14 @@
           </div>
         </div>
       </section>
+      <section class="contact">
+        <div class="contact-description">
+          <h2>Contact Me</h2>
+          <p></p>
+        </div>
+        <form action=""></form>
+      </section>
     </main>
-    <script src="js/main.js"></script>
+    <footer></footer>
   </body>
 </html>

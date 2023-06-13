@@ -1,27 +1,16 @@
-const sideMenu = document.getElementsByClassName("side-menu")[0];
-const sideMenuIcon = document.querySelector(".side-menu i");
-const sideMenuItems = document.querySelectorAll(".side-menu li");
+function handleHamburgerMenuBtn() {
+  const iconChange = document.querySelector(".nav-icon i");
+  if (iconChange.classList.contains("fa-bars")) {
+    iconChange.classList.add("fa-x");
+    iconChange.classList.remove("fa-bars");
+  } else if (iconChange.classList.contains("fa-x")) {
+    iconChange.classList.add("fa-bars");
+    iconChange.classList.remove("fa-x");
+  }
 
-function openHamburgerMenuBtn() {
-  sideMenu.style.width = "40%";
-  sideMenu.style.zIndex = 1;
-  for (i = 0; i < sideMenuItems.length; i++) {
-    sideMenuItems[i].style.display = "block";
-  }
+  document.querySelector("header").classList.toggle("active");
 }
-function closeHamburgerMenuBtn() {
-  sideMenu.style.width = "0%";
-  sideMenu.style.zIndex = -1;
-  for (i = 0; i < sideMenuItems.length; i++) {
-    sideMenuItems[i].style.display = "none";
-  }
-}
-if (window.onresize >= "762px") {
-  openHamburgerMenuBtn();
-}
+
 document
-  .getElementById("hamburger-close")
-  .addEventListener("click", closeHamburgerMenuBtn);
-document
-  .getElementById("hamburger-open")
-  .addEventListener("click", openHamburgerMenuBtn);
+  .querySelector(".nav-icon")
+  .addEventListener("click", handleHamburgerMenuBtn);
