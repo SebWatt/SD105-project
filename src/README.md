@@ -1,3 +1,3 @@
 # SD105-project
 
-This project is
+This project is my personal portfoliio website

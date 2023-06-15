@@ -1,4 +1,13 @@
 import "../styles/styles.css";
+import carGameImage from "../images/car-game.png";
+import matchGameImage from "../images/MittMatch.png";
+import quizImage from "../images/quiz-website.png";
+
+const images = document.querySelectorAll("img");
+
+images[0].src = carGameImage;
+images[1].src = matchGameImage;
+images[2].src = quizImage;
 
 function handleHamburgerMenuBtn() {
   const iconChange = document.querySelector(".nav-icon i");

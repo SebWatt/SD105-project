@@ -253,6 +253,15 @@ main {
   color: #343f3e;
 }
 
+footer {
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.6rem;
+}
+
 @media screen and (min-width: 762px) {
   .nav-icon {
     display: none;
