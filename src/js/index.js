@@ -1,7 +1,7 @@
 import "../styles/styles.css";
-import carGameImage from "../images/car-game.png";
-import matchGameImage from "../images/MittMatch.png";
-import quizImage from "../images/quiz-website.png";
+import carGameImage from "./../../images/car-game.png";
+import matchGameImage from "./../../images/MittMatch.png";
+import quizImage from "./../../images/quiz-website.png";
 
 const images = document.querySelectorAll("img");
 
